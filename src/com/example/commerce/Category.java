@@ -12,11 +12,6 @@ public class Category {
         this.products = products;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public List<Product> getProducts() {
-        return products;
-    }
+    public String getName() { return name; }
+    public List<Product> getProducts() { return products; }
 }

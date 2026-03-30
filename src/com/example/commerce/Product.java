@@ -14,23 +14,12 @@ public class Product {
         this.stock = stock;
     }
 
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
+    public int getPrice() { return price; }
+    public String getDescription() { return description; }
+    public int getStock() { return stock; }
 
-    public int getPrice() {
-        return price;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public int getStock() {
-        return stock;
-    }
-
-    public void setStock(int stock) {
-        this.stock = stock;
-    }
+    public void setPrice(int price) { this.price = price; }
+    public void setDescription(String description) { this.description = description; }
+    public void setStock(int stock) { this.stock = stock; }
 }

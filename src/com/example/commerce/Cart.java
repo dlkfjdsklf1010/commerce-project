@@ -57,4 +57,8 @@ public class Cart {
     public boolean isEmpty() {
         return items.isEmpty();
     }
+
+    public void removeByName(String name) {
+        items.removeIf(item -> item.getProduct().getName().equals(name));
+    }
 }

@@ -10,13 +10,8 @@ public class CartItem {
         this.quantity = 1;
     }
 
-    public Product getProduct() {
-        return product;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
+    public Product getProduct() { return product; }
+    public int getQuantity() { return quantity; }
 
     public void increaseQuantity() {
         quantity++;
