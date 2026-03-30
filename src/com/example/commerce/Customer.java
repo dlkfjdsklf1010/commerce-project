@@ -15,12 +15,4 @@ public class Customer {
     public String getName() {
         return name;
     }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getGrade() {
-        return grade;
-    }
 }
