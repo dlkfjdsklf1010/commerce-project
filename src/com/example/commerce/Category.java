@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Category {
 
-    String name;
-    List<Product> products;
+    private String name;
+    private List<Product> products;
 
     public Category(String name, List<Product> products) {
         this.name = name;

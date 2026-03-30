@@ -5,8 +5,9 @@ import java.util.Scanner;
 
 public class CommerceSystem {
 
-    List<Category> categories;
-    Scanner sc = new Scanner(System.in);
+    private List<Category> categories;
+
+    private Scanner sc = new Scanner(System.in);
 
     public CommerceSystem(List<Category> categories) {
         this.categories = categories;
@@ -29,7 +30,6 @@ public class CommerceSystem {
         }
     }
 
-    // 카테고리 출력
     private void showCategories() {
         System.out.println("[ 실시간 커머스 플랫폼 메인 ]");
 
@@ -49,8 +49,12 @@ public class CommerceSystem {
 
             for (int i = 0; i < products.size(); i++) {
                 Product p = products.get(i);
+
                 System.out.printf("%d. %-15s | %,d원 | %s\n",
-                        i + 1, p.name, p.price, p.description);
+                        i + 1,
+                        p.getName(),
+                        p.getPrice(),
+                        p.getDescription());
             }
 
             System.out.println("0. 뒤로가기");
@@ -62,8 +66,12 @@ public class CommerceSystem {
 
             if (choice >= 1 && choice <= products.size()) {
                 Product p = products.get(choice - 1);
+
                 System.out.printf("선택한 상품: %s | %,d원 | %s | 재고: %d개\n\n",
-                        p.name, p.price, p.description, p.stock);
+                        p.getName(),
+                        p.getPrice(),
+                        p.getDescription(),
+                        p.getStock());
             } else {
                 System.out.println("잘못된 입력입니다.");
             }
